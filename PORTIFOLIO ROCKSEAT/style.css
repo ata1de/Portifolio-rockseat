@@ -33,6 +33,7 @@ body *{
 
 body{
     background: var(--big-url) no-repeat top center/ cover;
+    height: 100vh;
 /* Essa seria a opção menos resumida */
 /* body{
     background-image: url(PROJETO/assets/bg-mobile.jpg) ;
@@ -203,3 +204,14 @@ footer{
     text-align: center;
 }
 
+/* o media serve para mudar algo em determinado px ou distancia */
+@media (min-width:700px) {
+    :root{
+        --big-url:url(PROJETO/assets/bg-desktop.jpg)
+    }
+
+    .light{
+        --big-url:url(PROJETO/assets?bg-desktop-light.jpg)
+    }
+    
+}
