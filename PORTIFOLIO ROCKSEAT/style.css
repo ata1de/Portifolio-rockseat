@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --text-color: white;
+    --big-url :url(PROJETO/assets/bg-mobile.jpg);
+    --stroke-color:rgba(255,255,255,0.5);
+    --surface-color: rgba(255,255,255,0.1);
+    --surface-color-hover:rgba( 255,255,255,0.05);
+    --icon-color:rgba( 255,255,255,0.2);
+    --switch:url(PROJETO/assets/moon-stars.svg)
+    
+}
+
+.light{
+    --text-color: black;
+    --big-url :url(PROJETO/assets/bg-mobile-light.jpg);
+    --stroke-color:  rgba( 0,0,0,0.5);
+    --surface-color:rgba( 0,0,0,0.05);
+    --surface-color-hover:rgba(0,0,0,0.02);
+    --icon-color:rgba(0,0,0,0.1);
+    --switch:url(PROJETO/assets/sun.svg)
+    
+}
+
+body *{
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+
+}
+
+body{
+    background: var(--big-url) no-repeat top center/ cover;
+/* Essa seria a opção menos resumida */
+/* body{
+    background-image: url(PROJETO/assets/bg-mobile.jpg) ;
+    background: no-repeat;
+    background-position: top center;
+    background: cover;
+} */
+}
+
+
+#container {
+    width: 320px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
+    /* Tambem centraliza o imagem, pois ela tem display inline e
+     ela permite que sua tag pai possa cetraliza-la */
+}
+
+#profile img {
+    display: block;
+    width: 112px;
+    margin: auto;
+    
+}
+
+
+
+
+#profile p {
+    font-weight: 500px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+#switch{
+    position: relative;
+    /* significa que qualquer element absoluto vai estar dentro das linhas do relativo*/
+    width: 64px;
+    margin: 4px auto;
+}
+
+#switch button{
+    width: 32px;
+    height:32px;
+    background: white var(--switch) no-repeat center;
+    /* background vem com a função repeat */
+    border: 0;
+    border-radius: 50%; 
+
+    position: absolute;
+    /* significa que ele vai fazer uma sobreposição de camadas, ou seja, o botão vai estar sobreposto
+     com o elemento abaixo dele */
+    z-index: 1;
+    left: 0;
+    /* é o andar que o elemento vai estar na sobreposição e é liberado com o atributo absoluto, alem 
+    de pode ter o left,right,top,bottom */
+    top: 50%;
+    transform: translateY(-50%);
+    /* tem a propriedade de movimentar o elemento no eixo y ou eixo x pegando a metada do elemento*/
+
+}
+
+.light #switch button {
+    right: 0;
+    left: initial;
+}
+
+#switch span{
+    display: block;
+    width: 62px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 9999px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+
+/* lista - links */
+/* ul - display block - ocupa todo o tamanho da div 
+a - display inline 
+display:inline não tem margem */
+
+ul{
+    list-style: none;
+    /* tira os pontos de uma lista o list style none*/
+    display :flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+    /* display flex ativa outras propriedades como:
+gap - espaçamento entre as colunas
+align items - alinha no eixo 
+justify content - aliha no eixo  */
+
+    
+    
+    
+}
+
+ul li a {
+    padding: 15px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:var(--surface-color);
+    border :1px solid var(--stroke-color);
+    /* rgba(red, green,blue e alpha)
+    o alpha é a transparência  */
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);  
+    /* backdrop filter = é uma propriedade que embaça um pouco o seu elemento,
+     porém em alguns safaris so pega se usar o webkit */
+
+    text-decoration: none ;
+    /* * text decoration none é para tirar a linha do link debaixo de nome */ 
+    /* line trought coloca uma linha ao meio*/
+    /* overline a linha fica em cima 
+    e a underline fica embaixo*/
+    font-weight: 500;
+    /* font weight acima de 400 é bold */
+    transition: background 0.5s;
+    /* all - que transita todas a propriedades quando carregar a página tudo , - seguido de quanto tempo vai acontecer */ 
+    
+}
+
+ul li a:hover {
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+
+}
+
+/* social icons */
+#social-icons{
+    display: flex;
+    padding: 24px 0;
+    font-size: 24px;
+    justify-content: center;
+    
+}
+
+#social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social-icons a:hover{
+    background: var(--icon-color);
+}
+
+footer{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
