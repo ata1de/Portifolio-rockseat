@@ -46,7 +46,7 @@ body{
 
 #container {
     width: 100%;
-    max-width: 580px;
+    max-width: 588px;
     margin: 56px auto 0px;
     padding: 0 24px;
 }
@@ -211,7 +211,7 @@ footer{
     }
 
     .light{
-        --big-url:url(PROJETO/assets?bg-desktop-light.jpg)
+        --big-url:url(PROJETO/assets/bg-desktop-light.jpg)
     }
     
 }
