@@ -12,8 +12,8 @@ function toogleMode(){
     const img = document.querySelector("#profile img")
 
     if (html.classList.contains("light")){
-        img.setAttribute("src", "PROJETO/assets/avatar-light.png")
+        img.setAttribute("src", "Images/assets/avatar-light.png")
     } else {
-        img.setAttribute("src", "PROJETO/assets/avatar.png")
+        img.setAttribute("src", "Images/assets/avatar.png")
     }
 }
