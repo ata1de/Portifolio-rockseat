@@ -60,6 +60,8 @@ body{
 }
 
 #profile img {
+    border-radius: 50%;
+    object-fit: cover;
     display: block;
     width: 112px;
     margin: auto;
