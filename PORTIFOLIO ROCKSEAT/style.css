@@ -6,23 +6,23 @@
 
 :root{
     --text-color: white;
-    --big-url :url(Images/assets/bg-mobile.jpg);
+    --big-url :url(Images/icons/bg-mobile.jpg);
     --stroke-color:rgba(255,255,255,0.5);
     --surface-color: rgba(255,255,255,0.1);
     --surface-color-hover:rgba( 255,255,255,0.05);
     --icon-color:rgba( 255,255,255,0.2);
-    --switch:url(Images/assets/moon-stars.svg)
+    --switch:url(Images/icons/moon-stars.svg)
     
 }
 
 .light{
     --text-color: black;
-    --big-url :url(Images/assets/bg-mobile-light.jpg);
+    --big-url :url(Images/icons/bg-mobile-light.jpg);
     --stroke-color:  rgba( 0,0,0,0.5);
     --surface-color:rgba( 0,0,0,0.05);
     --surface-color-hover:rgba(0,0,0,0.02);
     --icon-color:rgba(0,0,0,0.1);
-    --switch:url(Images/assets/sun.svg)
+    --switch:url(Images/icons/sun.svg)
     
 }
 
@@ -210,11 +210,11 @@ footer{
 /* o media serve para mudar algo em determinado px ou distancia */
 @media (min-width:700px) {
     :root{
-        --big-url:url(Images/assets/bg-desktop.jpg)
+        --big-url:url(Images/icons/bg-desktop.jpg)
     }
 
     .light{
-        --big-url:url(Images/assets/bg-desktop-light.jpg)
+        --big-url:url(Images/icons/bg-desktop-light.jpg)
     }
     
 }
