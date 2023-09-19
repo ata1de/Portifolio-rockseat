@@ -38,6 +38,9 @@ O projeto foi baseado no projeto DevLinks do curso do ROCKSEAT
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
-## Aprendizados
+## 📚 Aprendizados
 
 Aprendi a funcionalidade e modo de operação do git e do github, melhorei minhas habilidades de html e principalmente de css
+
+## 💭 Melhorias
+- Adicionar novos significado para as opções principais, pois me baseei no trabalho do ROCKSEAT
