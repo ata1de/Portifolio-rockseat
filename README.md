@@ -31,8 +31,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto foi baseado no projeto DevLinks do curso do ROCKSEAT
 
-- [Acesse o projeto finalizado, online](https://ata1de.github.io/Portifolio-rockseat/)
-
 
 ## 🔖 Layout
 
