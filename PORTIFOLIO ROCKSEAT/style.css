@@ -79,7 +79,7 @@ body{
 
 #switch{
     position: relative;
-    /* significa que qualquer element absoluto vai estar dentro das linhas do relativo*/
+    /* significa que qualquer elemento absoluto vai estar dentro das linhas do relativo*/
     width: 64px;
     margin: 4px auto;
 }

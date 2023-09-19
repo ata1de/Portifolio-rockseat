@@ -14,6 +14,6 @@ function toogleMode(){
     if (html.classList.contains("light")){
         img.setAttribute("src", "Images/Personal/Selfie1.jpeg")
     } else {
-        img.setAttribute("src", "Images/Personal/Selfie2.jpeg")
+        img.setAttribute("src", "Images/Personal/Selfie1.jpeg")
     }
 }
