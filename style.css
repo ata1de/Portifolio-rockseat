@@ -103,11 +103,12 @@ body{
     transform: translateY(-50%);
     /* tem a propriedade de movimentar o elemento no eixo y ou eixo x pegando a metada do elemento*/
 
+    animation: slide-out 0.4s;
+
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
+    animation: slide-in 0.4s forwards;
 }
 
 #switch span{
@@ -217,4 +218,22 @@ footer{
         --big-url:url(Images/icons/bg-desktop-light.jpg)
     }
     
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out{
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
+    }
 }
