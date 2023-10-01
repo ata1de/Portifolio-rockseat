@@ -104,7 +104,6 @@ body{
     /* tem a propriedade de movimentar o elemento no eixo y ou eixo x pegando a metada do elemento*/
 
     animation: slide-out 0.4s;
-
 }
 
 .light #switch button {
